@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Password Generator</title>
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <h1 class="title">Password Generator</h1>
+            <p class="subtitle">
+                Use our online <span style="color: #e05151; text-transform: uppercase;">password generator</span> to create a <span style="color: #e05151; font-weight:bold; text-transform: uppercase">strong</span> and <span style="color: #27ae60; text-transform: uppercase">safe</span> password.
+            </p>
+        </section>
+        <section class="box">
+            <div class="password">
+                <div class="text">
+                    <input type="text" name="password" id="password">
+                </div>
+                <div class="actions">
+                    <button id="copy1">
+                        <img src="assets/copy.svg" width="42" alt="copy-button">
+                    </button>
+                    <button id="renew">
+                        <img src="assets/renew.svg" width="42" alt="renew-button">
+                    </button>
+                </div>
+            </div>
+            <div class="security-indicator">
+                <div id="security-indicator-bar" class="bar">
+                </div>
+            </div>
+        </section>
+
+        <section class="box customize">
+            <h3 class="title">Customize</h3>
+            <div class="actions">
+                <div class="password-length">
+                    <p>Length:<span id="password-length-text">16</span></p>
+                    <input type="range" class="slider" name="password-length" id="password-length" min="4" max="64">
+                </div>
+
+                <div class="config">
+                    <label class="checkbox-container">
+                        <span class="text">Uppercase</span>
+                        <input type="checkbox" id="uppercase-check" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-container">
+                        <span class="text">Number</span>
+                        <input type="checkbox" id="number-check" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-container">
+                        <span class="text">Symbol</span>
+                        <input type="checkbox" id="symbol-check" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+            </div>
+        </section>
+        <div class="submit">
+            <button id="copy2">Copy password</button>
+        </div>
+    </main>
+
+    <script src="js/script.js" ></script>
+    
+    
+</body>
+</html>
